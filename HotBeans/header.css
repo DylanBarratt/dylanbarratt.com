@@ -1,0 +1,116 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+.p5Canvas {
+	z-index: -1;
+}
+#logo {
+	position: fixed;
+	left: 15px;
+	top: 5px;
+	width: 75px;
+	height: 75px;
+	background-color: transparent;
+	outline: none;
+}
+
+.navigationWindow {
+	height: 100%;
+	width: 0;
+
+	position: fixed;
+	left: 0;
+	top: 0;
+
+	z-index: 9;
+
+	background: none;
+	background-color: white;
+
+	overflow-x: hidden;
+	-webkit-transition: 0s;
+	-o-transition: 0s;
+	transition: 0s;
+}
+.navigationWindow a {
+	padding: 8px;
+	margin-top: 30px;
+	display: block;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+	position: relative;
+	top: 25%;
+	left: 7.5vw;
+	width: 50%;
+	color: #f1f1f1;
+	background-color: white;
+	margin-left: 15vw;
+	text-align: left;
+	text-decoration: none;
+	font-size: 36px;
+	color: rgb(30, 30, 30);
+}
+
+.navigationWindow a:hover,
+.navigationWindow a:focus {
+	color: #818181;
+}
+
+#burger {
+	display: inline-block;
+	cursor: pointer;
+	position: fixed;
+	left: calc(100vw - 65px);
+	top: 15px;
+	background-color: transparent;
+	overflow: hidden;
+}
+.bar {
+	width: 35px;
+	height: 5px;
+	margin: 6px 0;
+
+	background-color: white;
+	-webkit-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+}
+.change #bar1 {
+	-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+	-ms-transform: rotate(-45deg) translate(-9px, 6px);
+	transform: rotate(-45deg) translate(-9px, 6px);
+	background-color: black;
+}
+.change #bar2 {
+	opacity: 0;
+	background-color: black;
+}
+.change #bar3 {
+	-webkit-transform: rotate(45deg) translate(-8px, -8px);
+	-ms-transform: rotate(45deg) translate(-8px, -8px);
+	transform: rotate(45deg) translate(-8px, -8px);
+	background-color: black;
+}
+
+#header {
+	position: -webkit-sticky;
+	position: sticky;
+	left: 0px;
+	width: 100vw;
+	height: 10vh;
+	z-index: 10;
+	background-color: transparent !important;
+}
+
+@media screen and (max-width: 480px) {
+	.navigationWindow a {
+		font-size: 20pt;
+		text-align: center;
+		left: 10vw;
+		top: 15%;
+	}
+
+	#burger {
+		left: calc(100vw - 55px);
+	}
+}

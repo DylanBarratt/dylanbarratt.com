@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=10, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Apply for a position</title>
+		<link rel="icon" href="../images/logos/icon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="stylesheet" type="text/css" href="form.css" />
+		<link rel="stylesheet" type="text/css" href="../header.css" />
+	</head>
+
+	<body>
+		<div id="header">
+			<a href="../index.html"><img src="../images/logos/beansW.png" id="logo" tabindex="1"/></a>
+
+			<div id="burger" onclick="burgerX(this)" tabindex="2">
+				<div class="bar" id="bar1"></div>
+				<div class="bar" id="bar2"></div>
+				<div class="bar" id="bar3"></div>
+			</div>
+		</div>
+		<div class="section" id="sec1">
+			<h1 id="t1">Apply For a Position Today!</h1>
+			<p id="p1">
+				<br />
+				Could you be the next employee here at <t id="hb">Hot Beans</t>? Do you enjoy working in a freindly enviroment with flexible work hours and great pay?
+				Press the arrow or scroll down to find out more!
+			</p>
+			<a href="#sec2" target="_self" class="navArrow" id="a1">&#709;</a>
+		</div>
+		<div class="section" id="sec2">
+			<div class="text" style="grid-area: js; align-self: center;">
+				<h1 id="h2">Job Specification</h1>
+				<p id="p2">
+					The job posiution requires at least a level 3 computer science BTEC with the grade DDD or 3 A levels with grades AAA. You must also have basic web
+					development knowledge.
+				</p>
+			</div>
+
+			<div class="text" style="grid-area: l;">
+				<h1 id="h2">Useful Links</h1>
+				<p id="p2">
+					For anyone looking for a position, these sites should help learn! <br /> <br />
+					<ul>
+						<li id="p2"><a href="ttps://css-tricks.com/">css-tricks.com</a>  helps learn css styling</liid="p2">
+						<li id="p2"><a href="https://www.w3schools.com/">w3schools.com</a>  helps learn general web knowledge</li>
+						<li id="p2"><a href="https://stackoverflow.com/">stackoverflow.com</a> helps with more obscure questions<li>
+					</ul>
+				</p>
+			</div>
+		</div>
+		<div class="section" id="sec3" style="height: 100vh !important;">
+			<div id="formContainer">
+				<form id="form">
+					<h1 id="formTitle">Contact Us!</h1>
+					<input type="text" placeholder="Full Name" id="nameInput" class="formItem textbox" />
+					<input type="text" placeholder="Email" id="emailInput" class="formItem textbox" />
+					<textarea name="reasonInput" cols="30" rows="10" placeholder="Reason For Contact" style="resize: none;" id="reasonInput" class="formItem"></textarea>
+					<input type="submit" form="form1" value="Submit" id="sendBtn" class="formItem" />
+				</form>
+			</div>
+			<a href="#sec1" target="_self" class="navArrow" style="font-size: 2ch;">&#708;</a>
+		</div>
+
+		<div class="navigationWindow" id="nw">
+			<a href="../index.html">Home</a>
+			<a href="../companyProfile/companyProfile.html">Company Profile</a>
+			<a href="../team/team.html">Our Team</a>
+			<a href="../building/building.html">Building Plan</a>
+		</div>
+	</body>
+</html>
+<script src="../header.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.js"></script>
+<script type="text/javascript" src="../scripts/stars.js"></script>

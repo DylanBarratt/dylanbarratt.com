@@ -1,0 +1,103 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+* {
+	cursor: default;
+	font-family: "Montserrat", sans-serif;
+	overflow: hidden;
+}
+
+body {
+	background-color: #000000;
+}
+
+.map {
+	position: absolute;
+	top: 50%;
+	left: 30%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+#desc {
+	visibility: hidden;
+
+	width: 35vw;
+	height: 30vh;
+
+	position: absolute;
+	left: 60vw;
+	top: 30vh;
+	background-color: rgba(0, 0, 0, 0.75);
+}
+
+#roomName {
+	visibility: visible;
+	font-size: 6ch;
+	color: white;
+	text-shadow: 2px 2px #6a0dad;
+	background-color: rgba(0, 0, 0, 0.75);
+}
+
+#roomDesc {
+	font-size: 2ch;
+	color: white;
+	position: absolute;
+	top: 50%;
+	text-shadow: 2px 2px #6a0dad;
+	background-color: rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (max-width: 1599px) {
+	#desc {
+		top: 85%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+	#roomName {
+		font-size: 4ch;
+	}
+	#roomDesc {
+		position: absolute;
+		top: 27.5%;
+	}
+	.map {
+		zoom: 0.65;
+		top: 45%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+}
+
+@media screen and (max-width: 825px) {
+	.map {
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		zoom: 0.4;
+		top: 35%;
+	}
+	#desc {
+		top: 70%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		width: 95vw;
+	}
+	#roomName {
+		text-align: center;
+		font-size: 3ch;
+	}
+	#roomDesc {
+		text-align: center;
+		top: 27.5%;
+		font-size: 2ch;
+	}
+}

@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=10, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Hot Beans</title>
+		<link rel="icon" href="./images/logos/icon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="stylesheet" type="text/css" href="header.css" />
+	</head>
+
+	<body>
+		<div id="header" style="position: fixed;">
+			<a href="./index.html"><img src="images/logos/beansW.png" id="logo" tabindex="1" alt="Hot Beans Logo"/></a>
+
+			<div id="burger" onclick="burgerX(this)" tabindex="2">
+				<div class="bar" id="bar1"></div>
+				<div class="bar" id="bar2"></div>
+				<div class="bar" id="bar3"></div>
+			</div>
+		</div>
+
+		<div class="navigationWindow" id="nw">
+			<a href="companyProfile/companyProfile.html">Company Profile</a>
+			<a href="team/team.html">Our Team</a>
+			<a href="building/building.html">Building Plan</a>
+			<a href="apply/apply.html">Apply for a Position</a>
+		</div>
+
+		<div id="grid">
+			<h1 class="text" id="title">Hot Beans</h1>
+			<h2 class="text">Web Development Agency</h2>
+		</div>
+	</body>
+</html>
+
+<script>
+	var burger = document.getElementById("burger");
+	burger.addEventListener("keyup", function(event) {
+		if (event.keyCode === 13) {
+			event.preventDefault();
+			burgerX(burger);
+		}
+	});
+
+	var open = false;
+	function burgerX(x) {
+		x.classList.toggle("change");
+		if (!open) {
+			open = true;
+			document.getElementById("nw").style.width = "100%";
+			document.getElementById("logo").src = "images/logos/beansB.png";
+		} else {
+			open = false;
+			document.getElementById("nw").style.width = "0%";
+			document.getElementById("logo").src = "images/logos/beansW.png";
+		}
+	}
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.js"></script>
+<script src="scripts/stars.js"></script>

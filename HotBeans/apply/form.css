@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:700&display=swap");
+#formContainer {
+	width: 500px;
+	height: 500px;
+
+	position: absolute;
+	left: 50%;
+	top: 20%;
+	transform: translate(-50%, 0%);
+	background-color: white;
+}
+
+#form {
+	font-family: "Josefin Sans", sans-serif;
+	color: black;
+	width: 100%;
+	height: 100%;
+}
+
+#fornameInput {
+	position: relative;
+	top: 10%;
+}
+
+.formItem {
+	display: block;
+	margin: 5%;
+	color: black;
+}
+
+.textbox {
+	width: 75%;
+	height: 10%;
+	margin-left: calc(50% - calc(75% / 2));
+	border: 0.5px solid #7e83889d;
+	font-size: 3ch;
+	text-indent: 10px;
+}
+
+#formTitle {
+	width: 100%;
+	text-align: center;
+	font-size: 5ch;
+	color: black !important;
+}
+
+#reasonInput {
+	width: 75%;
+	height: 30%;
+	margin-left: calc(50% - calc(75% / 2));
+	border: 0.5px solid #7e83889d;
+	font-size: 2ch;
+	text-indent: 10px;
+}
+
+#sendBtn {
+	width: 25%;
+	height: 50px;
+	margin-left: calc(50% - calc(25% / 2));
+	border-radius: 10px;
+	background-color: #20b2aa;
+	font-size: 2ch;
+	color: rgb(255, 255, 255);
+	border: none;
+}
+
+@media screen and (max-width: 600px) {
+	#formContainer {
+		width: 300px;
+		height: 350px;
+	}
+	#sendBtn {
+		margin-top: -5px;
+		font-size: 1.5ch;
+	}
+	#formTitle {
+		font-size: 4ch;
+	}
+	.textbox {
+		font-size: 1.5ch;
+	}
+}
